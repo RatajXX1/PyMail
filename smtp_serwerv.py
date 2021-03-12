@@ -7,12 +7,6 @@ import scanner_mailer
 import authorize
 import ssl
 
-#
-# TODO: Scanner mail , quee  send mail, log alert itp , lepsze zabezpieczenia 
-#
-# TODO: TLS, try,
-#
-
 
 def conversation(socket_client, socket_adres):    
 
