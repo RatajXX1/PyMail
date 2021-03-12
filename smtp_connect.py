@@ -177,10 +177,7 @@ def smtp_connect_to():
         itmes = q.get()
         if type(itmes[1]) != list:
             domena = itmes[1].split("@")[1]
-            if domena == "test.pl":
-                domeny_MX = [["192.168.0.31", 5]]
-            else:
-                domeny_MX = get_MX_domains(domena)
+            domeny_MX = get_MX_domains(domena)
             if domeny_MX != False:
                 for index,x in enumerate(domeny_MX):
                     try:
